@@ -1,14 +1,15 @@
-/* ===== FOOTER BASE ===== */
+/* ====== GENERAL FOOTER STYLING ====== */
 footer {
   background-color: #111;
   color: #fff;
   padding: 40px 20px;
+  text-align: center;
   font-family: 'Poppins', sans-serif;
 }
 
-/* ===== SOCIAL MEDIA ICONS ===== */
+/* ====== MEDIA ICONS SECTION ====== */
 .media-icons {
-  display: flex; /* ✅ Required for Cypress test */
+  display: flex; /* ✅ required for Cypress */
   justify-content: center;
   align-items: center;
   gap: 15px;
@@ -26,13 +27,14 @@ footer {
   color: #f39c12;
 }
 
-/* ===== LINK BOXES ===== */
+/* ====== LINK BOXES SECTION ====== */
 .link-boxes {
-  display: flex; /* ✅ Required for Cypress test */
+  display: flex; /* ✅ required for Cypress */
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
   text-align: left;
+  margin-top: 20px;
 }
 
 .link-boxes .box {
@@ -58,7 +60,11 @@ footer {
   color: #f39c12;
 }
 
-/* ===== RESPONSIVENESS ===== */
+.link-boxes p {
+  margin: 5px 0;
+}
+
+/* ====== RESPONSIVENESS ====== */
 @media (max-width: 768px) {
   .link-boxes {
     flex-direction: column;

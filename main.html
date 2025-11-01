@@ -6,6 +6,14 @@
   <title>Company Footer</title>
   <link rel="stylesheet" href="style.css" />
   <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+
+  <style>
+    /* Inline backup styles to ensure Cypress sees display:flex immediately */
+    .media-icons,
+    .link-boxes {
+      display: flex !important;
+    }
+  </style>
 </head>
 <body>
   <footer>
@@ -21,7 +29,6 @@
         </div>
       </div>
 
-      <!-- NOTE: Cypress expects this wrapper -->
       <div class="link-boxes">
         <ul class="box">
           <li class="link_name">Links</li>

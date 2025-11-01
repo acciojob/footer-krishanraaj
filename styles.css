@@ -1,23 +1,23 @@
-/* Footer Section */
+/* ===== FOOTER BASE ===== */
 footer {
   background-color: #111;
   color: #fff;
-  padding: 20px 0;
-  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Social Media Icons Section */
+/* ===== SOCIAL MEDIA ICONS ===== */
 .media-icons {
-  display: flex; /* ✅ required for test */
+  display: flex; /* ✅ Required for Cypress test */
   justify-content: center;
   align-items: center;
   gap: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .media-icons a {
   color: #fff;
-  font-size: 20px;
+  font-size: 22px;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -26,18 +26,24 @@ footer {
   color: #f39c12;
 }
 
-/* Link Boxes Section */
+/* ===== LINK BOXES ===== */
 .link-boxes {
-  display: flex; /* ✅ required for test */
+  display: flex; /* ✅ Required for Cypress test */
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding: 10px 0;
+  text-align: left;
 }
 
-.link-boxes div {
-  min-width: 120px;
-  margin: 10px;
+.link-boxes .box {
+  min-width: 150px;
+  margin: 10px 15px;
+}
+
+.link-boxes h3 {
+  color: #f39c12;
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .link-boxes a {
@@ -50,4 +56,16 @@ footer {
 
 .link-boxes a:hover {
   color: #f39c12;
+}
+
+/* ===== RESPONSIVENESS ===== */
+@media (max-width: 768px) {
+  .link-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link-boxes .box {
+    text-align: center;
+  }
 }

@@ -1,106 +1,53 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: #f2f2f2;
-}
-
-/* Footer Styling */
-.footer {
-  background-color: #222;
+/* Footer Section */
+footer {
+  background-color: #111;
   color: #fff;
-  padding: 60px 20px 30px;
+  padding: 20px 0;
+  text-align: center;
 }
 
-.link-boxes { /* updated class to match Cypress test */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
-  gap: 30px;
-}
-
-.box {
-  flex: 1 1 220px;
-  min-width: 200px;
-}
-
-.box h2 {
-  font-size: 20px;
-  margin-bottom: 15px;
-  color: #f9ca24;
-}
-
-.box p {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #ccc;
-}
-
-.box ul {
-  list-style: none;
-}
-
-.box ul li {
-  margin-bottom: 10px;
-}
-
-.box ul li a {
-  color: #bbb;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.box ul li a:hover {
-  color: #f9ca24;
-}
-
-/* ✅ FIX: Cypress expects flex display */
+/* Social Media Icons Section */
 .media-icons {
-  display: flex;
-  justify-content: flex-start;
+  display: flex; /* ✅ required for test */
+  justify-content: center;
   align-items: center;
-  margin-top: 15px;
-  gap: 10px;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 
 .media-icons a {
   color: #fff;
-  background-color: #333;
-  border-radius: 50%;
-  padding: 10px;
-  transition: background 0.3s ease, transform 0.3s ease;
-  font-size: 16px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 .media-icons a:hover {
-  background-color: #f9ca24;
-  color: #222;
-  transform: translateY(-3px);
+  color: #f39c12;
 }
 
-.footer-bottom {
-  text-align: center;
-  border-top: 1px solid #444;
-  padding-top: 15px;
-  margin-top: 30px;
-  font-size: 14px;
-  color: #aaa;
+/* Link Boxes Section */
+.link-boxes {
+  display: flex; /* ✅ required for test */
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 10px 0;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .link-boxes {
-    flex-direction: column;
-    text-align: center;
-  }
+.link-boxes div {
+  min-width: 120px;
+  margin: 10px;
+}
 
-  .media-icons {
-    justify-content: center;
-  }
+.link-boxes a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.link-boxes a:hover {
+  color: #f39c12;
 }

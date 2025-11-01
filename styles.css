@@ -1,77 +1,64 @@
-/* ====== GENERAL FOOTER STYLING ====== */
-footer {
-  background-color: #111;
-  color: #fff;
-  padding: 40px 20px;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* ====== MEDIA ICONS SECTION ====== */
+body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Footer Section */
+footer {
+  background-color: #1e1e1e;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Media Icons (social) */
 .media-icons {
-  display: flex; /* ✅ required for Cypress */
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .media-icons a {
-  color: #fff;
+  color: white;
   font-size: 22px;
   text-decoration: none;
-  transition: 0.3s;
+  transition: color 0.3s ease;
 }
 
 .media-icons a:hover {
-  color: #f39c12;
+  color: #ffcc00;
 }
 
-/* ====== LINK BOXES SECTION ====== */
+/* Link Boxes */
 .link-boxes {
-  display: flex; /* ✅ required for Cypress */
+  display: flex;
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
-  text-align: left;
-  margin-top: 20px;
+  gap: 20px;
 }
 
 .link-boxes .box {
-  min-width: 150px;
-  margin: 10px 15px;
+  display: flex;
+  flex-direction: column;
 }
 
-.link-boxes h3 {
-  color: #f39c12;
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-.link-boxes a {
-  color: #fff;
+.link-boxes .box a {
+  color: white;
   text-decoration: none;
-  display: block;
   margin: 5px 0;
-  transition: 0.3s;
+  transition: color 0.3s ease;
 }
 
-.link-boxes a:hover {
-  color: #f39c12;
-}
-
-.link-boxes p {
-  margin: 5px 0;
-}
-
-/* ====== RESPONSIVENESS ====== */
-@media (max-width: 768px) {
-  .link-boxes {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .link-boxes .box {
-    text-align: center;
-  }
+.link-boxes .box a:hover {
+  color: #ffcc00;
 }
